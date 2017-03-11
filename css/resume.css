@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: #e0e0e0;
+    font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',Arial,'Hiragino Sans GB',微软雅黑,'WenQuanYi Micro Hei',STHeiti,SimSun,sans-serif;
+
+}
+.container{
+    position: relative;
+    margin: 10px auto;
+    width: 1080px;
+    height: 2000px;
+    background: #fff;
+}
+.sideinfo{
+    position: absolute;
+    width: 300px;
+    height: 2000px;
+    padding: 10px;
+    background-color: #897ff8;
+    margin-bottom: 20px;
+}
+.title{
+    margin: 25px 0;
+    text-align: center;
+    color: #fff;
+}
+.title img{
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+}
+.title h1 {
+    margin: 15px 0;
+    font-size: 25px;
+    font-family: "微软雅黑";
+}
+.title-info{
+    padding: 15px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    padding: 20px;
+}
+dt{
+    color: yellow;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+dd{
+    margin: 20px 20px 20px 20px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.icon-bookmark:before {
+    content: '\e802';
+}
