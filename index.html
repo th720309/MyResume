@@ -7,8 +7,56 @@
     <meta name="keyword" content="th是个小屁孩 求职　简历　前端">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://oct3pmpde.bkt.clouddn.com/jquery.js"></script>
 </head>
+<script>
+    var color = ["#00bfa5"]
+    function change() {
+        if($(".sideinfo").css("background-color")=="rgb(137, 127, 248)"){
+            $(".sideinfo").css("background-color","#00bfa5");
+            $("aside li").css("background","#00bfa5");
+            $(".main dt").css("color","#00bfa5");
+            $(".maininfo a ").css("color","#00bfa5");
+            $(".exp").css("border-left","2px solid #00bfa5");
+            $(".circle").css("background","#00bfa5");
+            $(".award-info").css("border-left","2px solid #00bfa5");
+            $(".skill-info ul h3 ").css("color","#00bfa5");
+            $(".skill-info li").css("border-left","2px solid #00bfa5");
+            $(".title-info dt").css("color","#9f3");
+            $(".skill-bar-wrap").css("background","#9f3");
+        }else{
+            $(".sideinfo").css("background-color","#897ff8");
+            $("aside li").css("background","#897ff8");
+            $(".main dt").css("color","#897ff8");
+            $(".maininfo a ").css("color","#897ff8");
+            $(".exp").css("border-left","2px solid #897ff8");
+            $(".circle").css("background","#897ff8");
+            $(".award-info").css("border-left","2px solid #897ff8");
+            $(".skill-info ul h3 ").css("color","#897ff8");
+            $(".skill-info li").css("border-left","2px solid #897ff8");
+            $(".title-info dt").css("color","#f5f415");
+            $(".skill-bar-wrap").css("background","#f5f415");
+        }
+    }
+</script>
 <body>
+    <aside>
+        <ul>
+            <li>
+                <a onclick="change();">换色</a>
+            </li>
+            <li>
+                <a href="https://github.com/th720309/MyResume" target="_blank">源代码</a>
+            </li>
+            <li>
+                <a href="http://www.tianhao.site" target="_blank">Blog</a>
+            </li>
+            <li>
+                <a href="https://www.github.com/th720309" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </aside>
     <div class="container">
         <div class="sideinfo">
             <div class="title">
@@ -18,19 +66,182 @@
             </div>
             <div class="title-info">
                 <ul>
-                    <li class="contact">
-                        <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
-                        <dd><i class="icon-mail-alt"></i>邮箱: <a href="mailto:i@html.love" target="_blank">646595546@qq.com</a></dd>
-                        <dd><i class="icon-wechat"></i>手机: 13124103006</dd>
+                    <li class="job">
+                        <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>应聘岗位</h3></dt>
+                        <dd><i class="icon-mail-alt"></i>Ｗeb前端工程师</dd>
                     </li>
-                    <li class="skills"></li>
+                    <li class="contact">
+                        <dt>
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                            <h3>Contact. 联系方式</h3>
+                        </dt>
+                        <dd><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <p>邮箱: <a href="mailto:i@html.love" target="_blank">646595546@qq.com</a></p>
+                        </dd>
+                        <dd>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>手机: 13124103006</p>
+                        </dd>
+                    </li>
+                    <li class="skills">
+                        <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>Skills. 专业技能</h3></dt>
+                        <dd>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 80%"></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 75%"></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 72%"></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">C</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 70%"></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 65%"></div>
+                            </div>
+                        </dd>
+                    </li>
                 </ul>
             </div>
+
         </div>
-
-        <div class="maininfo">
-
+        <div class="main">
+            <ul class="maininfo">
+                <li class="basicinfo">
+                    <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>Basic Info.基本资料</h3></dt>
+                    <hr>
+                    <dd><span>个人信息:</span> th是个小屁孩 / 男 / 20岁 / 2018届毕业生</dd>
+                    <dd><span>毕业院校:</span> 大连交通大学／本科</dd>
+                    <dd><span>专业:</span> 数学与应用数学＋软件工程</dd>
+                    <dd><span>Blog:</span> <a href="https://www.tianhao.site" target="_blank">www.tianhao.site</a></dd>
+                    <dd><span>GitHub:</span> <a href="https://www.github.com/th720309" target="_blank">www.github.com/th720309</a></dd>
+                </li>
+                <li class="experience">
+                    <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>Experience. 项目经验</h3></dt>
+                    <hr>
+                    <ul class="exp">
+                        <li>
+                            <div class="circle"></div>
+                            <h4>
+                                Hexo-theme-believe（2016.12 ~ 至今）
+                                <a href="https://github.com/th720309/hexo-theme-believe" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <a href="http://www.tianhao.site/blog" target="_blank"><i class="icon-link"></i>Demo</a>
+                            </h4>
+                            <p>炒鸡好看的 hexo主题，采用 ejs+sass 技术搭建的自主化静态网站，在hexo官方网站上架，日访问量500+。
+                                </br>
+                                使用 EJS 和 Sass 预处理器 来实现前端组件及数据交互,结合markdown格式文档，实现静态网站实时更新.主题已经适配移动端。
+                            </p>
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog.png">
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog2_meitu_2.png" style="width: 60px;height:125px;">
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>
+                                Hexo-theme-believe（2016.12 ~ 至今）
+                                <a href="https://github.com/th720309/hexo-theme-believe" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <a href="http://www.tianhao.site/blog" target="_blank"><i class="icon-link"></i>Demo</a>
+                            </h4>
+                            <p>炒鸡好看的 hexo主题，采用 ejs+sass 技术搭建的自主化静态网站，在hexo官方网站上架，日访问量500+。
+                                </br>
+                                使用 EJS 和 Sass 预处理器 来实现前端组件及数据交互,结合markdown格式文档，实现静态网站实时更新.主题已经适配移动端。
+                            </p>
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog.png">
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog2_meitu_2.png" style="width: 60px;height:125px;">
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>
+                                Hexo-theme-believe（2016.12 ~ 至今）
+                                <a href="https://github.com/th720309/hexo-theme-believe" target="_blank"><i class="icon-link"></i>源代码</a>
+                                <a href="http://www.tianhao.site/blog" target="_blank"><i class="icon-link"></i>Demo</a>
+                            </h4>
+                            <p>炒鸡好看的 hexo主题，采用 ejs+sass 技术搭建的自主化静态网站，在hexo官方网站上架，日访问量500+。
+                                </br>
+                                使用 EJS 和 Sass 预处理器 来实现前端组件及数据交互,结合markdown格式文档，实现静态网站实时更新.主题已经适配移动端。
+                            </p>
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog.png">
+                            <img src="http://oct3pmpde.bkt.clouddn.com/blog2_meitu_2.png" style="width: 60px;height:125px;">
+                        </li>
+                    </ul>
+                </li>
+                <li class="award">
+                    <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>Award Info.获奖情况</h3></dt>
+                    <hr>
+                    <div class="award-info">
+                        <div class="circle"></div>
+                        <h4>全国大学生数学建模比赛辽宁赛区一等奖（2015.9）</h4>
+                        <h4>全国大学生程序设计竞赛辽宁赛区三等奖（2014.3）</h4>
+                        <h4>全国大学生程序蓝桥杯程序设计竞赛辽宁赛区二等奖（2014.4）</h4>
+                        <h4>辽宁省计算机博弈大赛六字棋项目二等奖（2015.5）</h4>
+                        <h4>大连交通大学第二届Java程序设计大赛一等奖（2015.5）</h4>
+                        <h4>加入院学生会科技部，成功完成迎新晚会视频制作任务（2014.9）</h4>
+                        <h4>参加学校软件联盟组织学术研究组,进行机器学习方面的学术研究,看过多篇英文文献。</h4>
+                        <h4>连续三年获得校奖学金（2013.9 ~ 2016.9)</h4>
+                    </div>
+                </li>
+                <li class="skill-info">
+                    <dt><i class="fa fa-bookmark-o" aria-hidden="true"></i><h3>Skill Info.技能总结</h3></dt>
+                    <hr>
+                    <ul>
+                        <h3>Ｗeb前端</h3>
+                        <li>
+                            <div class="circle"></div>
+                            <p>能够编写语义化的 HTML，模块化的 CSS，完成较复杂的布局</br>
+                                用过Sass CSS预处理方法。
+                            </p>
+                            <p>熟悉原生Javascript，能脱离jQuery等类库编码</br>
+                                能运用模块化、面向对象的方式编程</br>
+                                了解jQuery的使用
+                            </p>
+                            <p>了解前端安全、性能优化方面的一些知识</p>
+                        </li>
+                        <h3>后端</h3>
+                        <li>
+                            <div class="circle"></div>
+                            <p>有过一年Linux日常使用经验</p>
+                            <p>了解 Python，能够实现简单的爬虫、数据处理工具、自动化脚本</br>
+                                了解 C，能编写简单的解释器</br>
+                                了解 Java，能进行简单的网络编程
+                            </p>
+                        </li>
+                        <h3>其他</h3>
+                        <li>
+                            <div class="circle"></div>
+                            <p>是一个有趣的人，博客日均浏览量 500+</br>
+                                严重强迫症，不能忍受界面一个像素的偏差，同样不能忍受代码格式一个空格的偏差</br>
+                                掌握 Vim Git 等开发工具的使用</br>
+                                能够熟练使用 Markdown 进行写作
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
+<footer>
+    <span>Resume By th是个小屁孩　仿做自<a href="http://html.love/">DIYgod</a></span>
+</footer>
 </body>
+
 </html>
